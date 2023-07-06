@@ -46,7 +46,7 @@ public class UserController {
 		}
 		
 		User createdUser = userService.saveUser(user);
-		
+
 		return ResponseEntity.status(HttpStatus.CREATED).body(createdUser);
 		
 	}
